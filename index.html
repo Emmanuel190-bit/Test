@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern student and junior developer portfolio template.">
+  <title>Jordan Lee | Student Developer</title>
+
+  <!-- Runs before first paint: enables animations only when JS works, and applies saved theme (no flash) -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      var t = null;
+      try { t = localStorage.getItem("portfolio-theme"); } catch (e) {}
+      if (!t) {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      }
+      d.setAttribute("data-theme", t);
+    })();
+  </script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <nav class="nav container" aria-label="Main">
+    <a class="brand" href="#home">JL<span>.</span></a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="theme-toggle" aria-label="Switch to light theme">☼</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero container">
+    <div class="hero-content reveal">
+      <p class="eyebrow">STUDENT DEVELOPER • OPEN TO OPPORTUNITIES</p>
+      <h1>Build your <span>digital presence</span> with confidence.</h1>
+      <p class="hero-text">A polished, responsive portfolio template for students, junior developers, freelancers and digital creators.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore My Work <i class="arrow">→</i></a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+      <div class="mini-stats">
+        <div><strong>03+</strong><span>Projects</span></div>
+        <div><strong>04</strong><span>Core Skills</span></div>
+        <div><strong>100%</strong><span>Responsive</span></div>
+      </div>
+    </div>
+
+    <div class="hero-panel reveal">
+      <div class="profile-circle">JL</div>
+      <p class="status"><span class="dot"></span>Available for learning &amp; freelance opportunities</p>
+      <h2>Jordan Lee</h2>
+      <p>Student Developer</p>
+      <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container reveal">
+    <div class="section-label">01 — ABOUT</div>
+    <div class="two-col">
+      <h2>Learning, building and improving one project at a time.</h2>
+      <div>
+        <p class="muted">Replace this section with your own story. Tell visitors what you are studying, what interests you and the type of work you want to do.</p>
+        <p class="muted">This template is easy to edit, so beginners can personalize their portfolio without a framework or build tool.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt reveal">
+    <div class="container">
+      <div class="section-label">02 — SKILLS</div>
+      <h2>My current toolkit.</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <span>01</span><h3>HTML5</h3>
+          <p>Semantic structure and accessible page layouts.</p>
+          <div class="meter" role="img" aria-label="HTML5 proficiency 92 percent"><i style="--w:92%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span>02</span><h3>CSS3</h3>
+          <p>Responsive layouts, animations and modern styling.</p>
+          <div class="meter" role="img" aria-label="CSS3 proficiency 88 percent"><i style="--w:88%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span>03</span><h3>JavaScript</h3>
+          <p>Interactive interfaces and browser functionality.</p>
+          <div class="meter" role="img" aria-label="JavaScript proficiency 78 percent"><i style="--w:78%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span>04</span><h3>Git &amp; GitHub</h3>
+          <p>Version control and publishing personal projects.</p>
+          <div class="meter" role="img" aria-label="Git and GitHub proficiency 70 percent"><i style="--w:70%"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container reveal">
+    <div class="section-label">03 — PROJECTS</div>
+    <div class="section-top">
+      <h2>Selected work.</h2>
+      <p class="muted">Replace these demo projects with your own work.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project">
+        <div class="project-art"><span>01</span></div>
+        <div class="project-body">
+          <small>LANDING PAGE</small>
+          <h3>Nova Creative</h3>
+          <p>A clean responsive landing page concept for a creative studio.</p>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="#" class="project-link">View project <i class="arrow">↗</i></a>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-art second"><span>02</span></div>
+        <div class="project-body">
+          <small>PRODUCTIVITY</small>
+          <h3>TaskFlow</h3>
+          <p>A simple task-management interface designed for everyday productivity.</p>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <a href="#" class="project-link">View project <i class="arrow">↗</i></a>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-art third"><span>03</span></div>
+        <div class="project-body">
+          <small>PORTFOLIO</small>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio concept for a student or junior developer.</p>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <a href="#" class="project-link">View project <i class="arrow">↗</i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section alt reveal">
+    <div class="container">
+      <div class="section-label">04 — SERVICES</div>
+      <h2>What I can help with.</h2>
+      <div class="service-grid">
+        <article><b>01</b><h3>Landing Pages</h3><p>Simple, responsive pages for personal brands and small businesses.</p></article>
+        <article><b>02</b><h3>Portfolio Websites</h3><p>Professional online portfolios for students and creatives.</p></article>
+        <article><b>03</b><h3>Website Updates</h3><p>Content, layout and styling updates for existing websites.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact reveal">
+    <div>
+      <div class="section-label">05 — CONTACT</div>
+      <h2>Let's create something useful.</h2>
+      <p class="muted">Replace the information below with your own contact details and social profiles.</p>
+    </div>
+    <div class="contact-card">
+      <a href="mailto:hello@example.com">hello@example.com <i class="arrow">→</i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub <i class="arrow">↗</i></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn <i class="arrow">↗</i></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>© <b id="year">2026</b> Jordan Lee.</span>
+    <span>Student Developer Portfolio Template</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
